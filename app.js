@@ -7,7 +7,7 @@ var express 	= require('express'),
 
 
 //APP CONFIG
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect("mongodb:Harsh:123456@ds159509.mlab.com:59509/restful");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
